@@ -1,83 +1,285 @@
-body {
-  background: #345;
-  color: white;
-  text-shadow: 2px 2px black;
+@media print{
+
+    body {
+      text-shadow: 2px 2px black;
+      overflow: none;
+    }
+
+    div {
+      margin: 25px;
+    }
+
+    h1 {
+      padding-left: 25px;
+    }
+
+    h2 {
+      padding-left: 75px;
+    }
+
+    h3 {
+      padding-left: 125px;
+    }
+
+    h4 {
+      padding-left: 150px;
+    }
+
+    a {
+      visibility: hidden;
+      color: white;
+      text-decoration: none;
+      display: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .border {
+      border-style: outset;
+      border-color: black;
+      border-radius: 5px;
+    }
+
+    .content {
+      width: 55%;
+      height: 75%;
+    }
+
+    .projects {
+      position: fixed;
+      left: 0;
+      top: 9%;
+      bottom: 9%;
+      width: 90%;
+    }
+
+    .header {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      width: 75%;
+      top: 10px;
+      text-align: center;
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .footer {
+      position: fixed;
+      left: 5%;
+      right: 5%;
+      width: 80%;
+      bottom: 10px;
+    }
+
+    .footer .left {
+      position: absolute;
+      top: 0px;
+      text-align: left;
+    }
+
+    .footer .right {
+      position: static;
+      top: 0px;
+      text-align: right;
+    }
 }
 
-div {
-  margin: 25px;
+@media screen and (min-width: 1024px) {
+
+  body {
+    background: #335;
+    color: white;
+    text-shadow: 2px 2px black;
+    overflow: none;
+  }
+
+  div {
+    margin: 25px;
+  }
+
+  h1 {
+    padding-left: 25px;
+  }
+
+  h2 {
+    padding-left: 75px;
+  }
+
+  h3 {
+    padding-left: 125px;
+  }
+
+  h4 {
+    padding-left: 150px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .border {
+    border-style: outset;
+    border-color: black;
+    border-radius: 5px;
+  }
+
+  .content {
+    width: 45%;
+    height: 75%;
+  }
+
+  .projects {
+    position: fixed;
+    left: 27.5%;
+    top: 9%;
+    bottom: 9%;
+    background-color: #353;
+    overflow: auto;
+  }
+
+  .header {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    top: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #533;
+  }
+
+  .footer {
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    bottom: 10px;
+    background-color: #533;
+    z-index: -1;
+  }
+
+  .footer .left {
+    position: absolute;
+    top: 0px;
+    text-align: left;
+  }
+
+  .footer .right {
+    position: static;
+    top: 0px;
+    text-align: right;
+  }
+
+  .print {
+    visibility: hidden;
+    display: none;
+  }
+
 }
 
-h1 {
-  padding-left: 25px;
-}
+@media screen and (max-width: 1023px) {
 
-h2 {
-  padding-left: 75px;
-}
+  body {
+    background: #335;
+    color: white;
+    text-shadow: 2px 2px black;
+    overflow: none;
+  }
 
-h3 {
-  padding-left: 125px;
-}
+  div {
+    margin: 25px;
+  }
 
-h4 {
-  padding-left: 150px;
-}
+  h1 {
+    padding-left: 25px;
+  }
 
-a {
-  color: white;
-  text-decoration: underline;
-}
+  h2 {
+    padding-left: 75px;
+  }
 
-a:hover {
-  text-decoration: none;
-}
+  h3 {
+    padding-left: 125px;
+  }
 
-.border {
-  border-style: outset;
-  border-color: black;
-  border-radius: 5px;
-}
+  h4 {
+    padding-left: 150px;
+  }
 
-.content {
-  width: 45%;
-  height: 75%;
-}
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
-.projects {
-  position: fixed;
-  left: 27.5%;
-  top: 9%;
-  bottom: 9%;
-}
+  a:hover {
+    text-decoration: none;
+  }
 
-.header {
-  position: absolute;
-  left:25%;
-  right:25%;
-  width: 50%;
-  top: 10px;
-  text-align: center;
-  font-size: 25px;
-  padding: 10px;
-}
+  .border {
+    border-style: outset;
+    border-color: black;
+    border-radius: 5px;
+  }
 
-.footer {
-  position: fixed;
-  left:25%;
-  right:25%;
-  width: 50%;
-  bottom: 0px;
-}
+  .content {
+    width: 92.5%;
+    height: 70%;
+  }
 
-.footer .left {
-  position: absolute;
-  top: 0px;
-  text-align: left;
-}
+  .projects {
+    position: fixed;
+    left: 0px;
+    top: 9%;
+    bottom: 9%;
+    background-color: #353;
+    overflow-x: auto;
+  }
 
-.footer .right {
-  position: static;
-  top: 0px;
-  text-align: right;
+  .header {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    top: 0px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #533;
+  }
+
+  .footer {
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    bottom: 0px;
+    background-color: #533;
+  }
+
+  .footer .left {
+    position: absolute;
+    top: 0px;
+    text-align: left;
+  }
+
+  .footer .right {
+    position: static;
+    top: 0px;
+    text-align: right;
+  }
+
+  .print {
+    visibility: hidden;
+    display: none;
+  }
+
 }
