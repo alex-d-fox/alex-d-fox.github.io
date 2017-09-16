@@ -23,8 +23,11 @@
   }
 
   @keyframes loadProjects {
-    0%   {left:-600px;}
-    100% {left: 600px;}
+    0%   {transform: rotateY(180deg)}
+    25%   {transform: rotateY(360deg)}
+    50%   {transform: rotateY(180deg) rotateX(180deg)}
+    75%   {transform: rotateX(360deg)}
+    100% {transform: rotateY(360deg) rotateX(360deg)}
   }
 
 }
