@@ -1,90 +1,90 @@
-@media print{
+@media print {
 
-    body {
-      text-shadow: 2px 2px black;
-      overflow: none;
-    }
+  body {
+    text-shadow: 2px 2px black;
+    overflow: none;
+  }
 
-    div {
-      margin: 25px;
-    }
+  div {
+    margin: 25px;
+  }
+  
+  h1 {
+    padding-left: 25px;
+  }
 
-    h1 {
-      padding-left: 25px;
-    }
+  h2 {
+    padding-left: 75px;
+  }
 
-    h2 {
-      padding-left: 75px;
-    }
+  h3 {
+    padding-left: 125px;
+  }
 
-    h3 {
-      padding-left: 125px;
-    }
+  h4 {
+    padding-left: 150px;
+  }
 
-    h4 {
-      padding-left: 150px;
-    }
+  a {
+    visibility: hidden;
+    color: white;
+    text-decoration: none;
+    display: none;
+  }
 
-    a {
-      visibility: hidden;
-      color: white;
-      text-decoration: none;
-      display: none;
-    }
+  a:hover {
+    text-decoration: none;
+  }
 
-    a:hover {
-      text-decoration: none;
-    }
+  .border {
+    border-style: outset;
+    border-color: black;
+    border-radius: 5px;
+  }
 
-    .border {
-      border-style: outset;
-      border-color: black;
-      border-radius: 5px;
-    }
+  .content {
+    width: 55%;
+    height: 75%;
+  }
 
-    .content {
-      width: 55%;
-      height: 75%;
-    }
+  .projects {
+    position: fixed;
+    left: 0;
+    top: 9%;
+    bottom: 9%;
+    width: 90%;
+  }
 
-    .projects {
-      position: fixed;
-      left: 0;
-      top: 9%;
-      bottom: 9%;
-      width: 90%;
-    }
+  .header {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    width: 75%;
+    top: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+  }
 
-    .header {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      width: 75%;
-      top: 10px;
-      text-align: center;
-      font-size: 25px;
-      padding: 10px;
-    }
+  .footer {
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    width: 80%;
+    bottom: 10px;
+  }
 
-    .footer {
-      position: fixed;
-      left: 5%;
-      right: 5%;
-      width: 80%;
-      bottom: 10px;
-    }
+  .footer .left {
+    position: absolute;
+    top: 0px;
+    text-align: left;
+  }
 
-    .footer .left {
-      position: absolute;
-      top: 0px;
-      text-align: left;
-    }
-
-    .footer .right {
-      position: static;
-      top: 0px;
-      text-align: right;
-    }
+  .footer .right {
+    position: static;
+    top: 0px;
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: 1024px) {
